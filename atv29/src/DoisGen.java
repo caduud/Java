@@ -1,0 +1,27 @@
+import java.util.HashSet;
+
+public class DoisGen <T,V>{
+    T ob1;
+    V ob2;
+    DoisGen(T o1, V o2) {
+        ob1 = o1;
+        ob2 = o2;
+    }
+    public T getOb1() {
+        return ob1;
+    }
+    public V getOb2() {
+        return ob2;
+    }
+
+    public void mostrar(){
+        System.out.println("Tipo de T: " + ob1.getClass().getName() + "Tipo de V: " + ob2.getClass().getName());
+    }
+}
+
+class main{
+    public static void main(String[] args) {
+        DoisGen<String, Integer> seila = new DoisGen<>("joao", 55);
+        seila.mostrar();
+    }
+}
