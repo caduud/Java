@@ -11,7 +11,7 @@ public class Pessoa implements Runnable{
     public void run() {
         System.out.println(thread.getName() + " Iniciando, saldo total: " + conta.getSaldo());
 
-        for(int i = 0; i < 10; i++){
+        for(int i = 0; i < 30; i++){
             conta.sacar(200);
             System.out.println(thread.getName() + " Sacando, saldo total: " + conta.getSaldo());
             conta.depositar(200);
